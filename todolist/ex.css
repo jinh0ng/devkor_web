@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Jua", sans-serif;
+  }
+
+h1{
+    font-size: 40px;
+    margin:5px;
+    padding-top: 40px;
+    color: #ffa8b1;
+}
+
+.top, h1{
+    text-align: center;
+    background-color:#ffebee
+    ;
+    border-radius: 10px;
+}
+.middle{
+    padding-bottom: 40px;
+}
+input{
+    border-radius: 30px;
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button{
+    background-color: #ffa8b1;
+    color: #ffebee;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.done-btn{
+    background-color: #ffa8b1;
+    color: #ffebee;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.delete-btn{
+    background-color: #ffa8b1;
+    color: #ffebee;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+input, button{
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: white;
+}
+
+span{
+    font-size: 34px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 88%;
+}
+
+span:hover, button:hover{
+    background-color: rgba(128, 128, 128, 0.479);
+    
+}
+
+#done span{
+    width: 93.5%;
+}
+
+span, button{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+#list, #done {
+    animation: open .5s ease-in-out;
+}
+
+@keyframes open {
+    0% {opacity: 0; margin-top: -20px}
+    100% {opacity: 1; margin-top: 0px}
+}
+
+@media all and (min-width:720px) and (max-width:1024px) {
+
+    span{
+        width: 75%;
+    }
+    #done span{
+        width: 85%;
+    }
+}
+
+@media all and (max-width:720px) {
+
+    span{
+        width: 55%;
+    }
+    #done span{
+        width: 70%;
+    }
+    
+ }
